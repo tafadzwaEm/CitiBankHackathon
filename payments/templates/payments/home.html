@@ -1,0 +1,45 @@
+{% extends 'payments/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="col">
+            <div class="row">
+                <h6 class="hearding">YOUR BALANCE</h6>
+                <h2 class="hearding">200 PLN</h2>
+            </div>
+            <div class="row mt-4">
+                <!--CAROUSEL START -->
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{% static 'payments/citicard1.jpg' %}" class="d-block citicard img-center" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'payments/citicard2.jpg' %}" class="d-block citicard" alt="...">
+                        </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                </div>
+
+                <!--CAROUSEL END -->
+            </div>
+
+            <div class="row mt-4 col-6 centeredbutton">
+                <a href="{% url 'scan' %}" class="btn btn-warning btn-lg boldfont rounded-pill ">START SHOPPING</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

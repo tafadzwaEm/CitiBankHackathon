@@ -1,0 +1,19 @@
+{% extends 'payments/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="col">
+            <div class="row">
+                <h6 class="hearding">SHOW QR CODE TO CASHIER</h6>
+            </div>
+
+            <a class="carousel-control-next-icon"></a>
+        </div>
+
+        <a href="{% url 'cart' %}" class="link-white text-light">Back</a>
+        <a href="{% url 'home' %}" class="link-white text-light">Cancel</a>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'payments/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="col">
+            <div class="row">
+                <h6 class="hearding">SCAN PRODUCT QR CODE</h6>
+            </div>
+
+            <div class="row mt-4">
+                <img src="{% static 'payments/qr2.jpg' %}" class="d-block citicard img-center" alt="...">
+            </div>
+
+            <div class="row mt-4 col-6 centeredbutton">
+                <a href="{% url 'cart' %}" class="btn btn-success btn-lg boldfont rounded-pill ">SCAN</a>
+            </div>
+        </div>
+
+        <a href="{% url 'home' %}" class="link-white text-light">Back</a>
+    </div>
+
+{% endblock %}
